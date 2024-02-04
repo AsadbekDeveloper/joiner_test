@@ -1,0 +1,95 @@
+{
+    "questions": [
+        {
+            "id": 0,
+            "question": "What's your preferred leisure activity?",
+            "choices": [
+                "Reading",
+                "Gaming",
+                "Cooking",
+                "Exercising",
+                "Painting",
+                "Watching",
+                "Traveling"
+            ]
+        },
+        {
+            "id": 1,
+            "question": "Choose your favorite music genre:",
+            "choices": [
+                "Pop",
+                "Rock",
+                "Hip-hop",
+                "Jazz",
+                "Country",
+                "Electronic",
+                "Classical"
+            ]
+        },
+        {
+            "id": 2,
+            "question": "What's your go-to beverage?",
+            "choices": [
+                "Coffee",
+                "Tea",
+                "Soda",
+                "Juice",
+                "Smoothie",
+                "Water",
+                "Energy drink"
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Select your ideal vacation spot:",
+            "choices": [
+                "Beach",
+                "Mountains",
+                "City",
+                "Countryside",
+                "Desert",
+                "Island",
+                "Forest"
+            ]
+        },
+        {
+            "id": 4,
+            "question": "What type of movie do you prefer?",
+            "choices": [
+                "Action",
+                "Comedy",
+                "Drama",
+                "Horror",
+                "Romance",
+                "Sci-fi",
+                "Documentary"
+            ]
+        },
+        {
+            "id": 5,
+            "question": "What’s yor proffesional area?",
+            "choices": [
+                "Doctor",
+                "Teacher",
+                "Programmer/Developer",
+                "Teacher",
+                "Lawyer",
+                "Chef",
+                "Journalist"
+            ]
+        },
+        {
+            "id": 6,
+            "question": "What's your preferred mode of transportation?",
+            "choices": [
+                "Car",
+                "Bike",
+                "Walk",
+                "Public transit",
+                "Motorcycle",
+                "Skateboard",
+                "Scooter"
+            ]
+        }
+    ]
+}
