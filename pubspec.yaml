@@ -1,0 +1,46 @@
+name: test_questionaire
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.5 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^2.0.9
+  flutter_screenutil: ^5.9.0
+  page_transition: ^2.1.0
+  riverpod: ^2.5.0
+  riverpod_annotation: ^2.3.4
+  flutter_riverpod: ^2.4.10
+  go_router: ^13.1.0
+  equatable: ^2.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/data/
+
+  fonts:
+    - family: ProximaSoft
+      fonts:
+        - asset: assets\fonts\ProximaSoft-SemiBold.ttf
+          weight: 600
+        - asset: assets\fonts\ProximaSoft-Bold.ttf
+          weight: 700
+        - asset: assets\fonts\ProximaSoft-ExtraBold.ttf
+          weight: 800
