@@ -16,7 +16,7 @@ class QuestionaireAppbar extends StatelessWidget {
         horizontal: mainHorPadding,
         vertical: 5.h,
       ).copyWith(
-        top: 40.h,
+        top: 50.h,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

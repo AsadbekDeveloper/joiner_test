@@ -8,6 +8,7 @@ import 'package:test_questionaire/features/questionaire/presentation/providers/q
 import 'package:test_questionaire/shared/colors/colors.dart';
 import 'package:test_questionaire/shared/config/router.dart';
 import 'package:test_questionaire/shared/constants.dart/sizes.dart';
+import 'package:collection/collection.dart';
 
 class ResultPage extends StatelessWidget {
   const ResultPage({super.key});
@@ -32,7 +33,7 @@ class ResultPage extends StatelessWidget {
         padding: EdgeInsets.all(
           mainHorPadding,
         ).copyWith(
-          top: 40.h,
+          top: 50.h,
         ),
         child: Column(
           children: [
@@ -71,22 +72,28 @@ class ResultPage extends StatelessWidget {
                       width: double.infinity,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: List.generate(
-                          answers.length,
-                          (index) => Column(
+                        children: List.generate(questions.length, (index) {
+                          final question = questions[index];
+                          final answer = answers.firstWhereOrNull(
+                            (element) => element.questionId == question.id,
+                          );
+                          return Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                '${index + 1}. ${questions[answers[index].questionId].name}',
+                                '${index + 1}. ${question.name}',
                                 style: Theme.of(context).textTheme.bodyMedium,
                               ),
                               Text(
-                                answers[index].answer ?? '',
+                                answer?.answer ?? '',
                                 style: Theme.of(context).textTheme.bodyMedium,
                               ),
+                              SizedBox(
+                                height: 10.h,
+                              ),
                             ],
-                          ),
-                        ),
+                          );
+                        }),
                       ),
                     );
                   },

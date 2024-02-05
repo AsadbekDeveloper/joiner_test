@@ -15,6 +15,7 @@ class QuestionairePage extends ConsumerWidget {
     return Scaffold(
       backgroundColor: AppColors.primaryPurple,
       body: Container(
+        width: double.infinity,
         decoration: BoxDecoration(
           gradient: RadialGradient(
             colors: [

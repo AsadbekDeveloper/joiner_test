@@ -15,7 +15,8 @@ class QuestionaireProgress extends StatelessWidget {
           final value = ref.watch(questionaireProvider);
           return ListView.separated(
             scrollDirection: Axis.horizontal,
-            itemBuilder: (context, index) => Container(
+            itemBuilder: (context, index) => AnimatedContainer(
+              duration: const Duration(milliseconds: 400),
               width: 51.w,
               margin: EdgeInsets.symmetric(
                 vertical: 6.h,
